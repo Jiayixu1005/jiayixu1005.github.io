@@ -9,3 +9,13 @@ platforms
 Thumbs.db 
 *.zip 
 npm-debug.log 
+
+
+
+# IDE Files
+.idea
+.c9
+
+# Other
+node_modules
+bower_components
