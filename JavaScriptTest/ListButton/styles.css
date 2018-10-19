@@ -1,5 +1,5 @@
 button {
-    background-color: rgb(38, 0, 255);
+    background-color: mediumslateblue;
     border: 2px green dashed;
     color: greenyellow;
     text-align: center;    
@@ -7,7 +7,7 @@ button {
 }
 
 header {
-    background-color: aqua;
+    background-color: lightpink;
     text-align: center;
 }
 
@@ -15,10 +15,11 @@ header.p {
     text-align: center;
     font-weight: bold;
     font-size: 110%;
+    color: blue;
 
 }
 
-    h1.foo{
+h1.foo{
         text-align: center;
     }
 
@@ -32,15 +33,17 @@ img#list-button-utah{
     float: right;
 }
 main {
-    background-color: blueviolet;
+    background-color:lightpink;
 }
 
 footer {
-    background-color:green;
+    background-color:lightcyan;
     text-align: center;
 }
 p.byline {
     font-style: italic;
     font-size: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 
 }
