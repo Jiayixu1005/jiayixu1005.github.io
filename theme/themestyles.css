@@ -1,0 +1,28 @@
+header {
+    background-color: white;
+    text-align: center;
+}
+
+header p {
+    font-weight: bold;
+    color: blue;
+}
+
+p.byline {
+    font-style: italic;
+    font-size: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+background-color: red;
+}
+
+figure.left {
+    float: left;
+}
+
+footer {
+    background-color: blue;
+    text-align: center;
+}
