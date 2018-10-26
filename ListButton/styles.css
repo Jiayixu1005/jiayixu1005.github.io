@@ -33,25 +33,38 @@ img#list-button-utah{
     float: right;
 }
 
-button.test-button{
-    padding-top: 25px;
-    border:15px yellowgreen solid;
+
+
+
+.btn-padding {
+    padding: 25px;
+    border: 10px green double;    
     border-radius: 22px;
 }
 
-button.test-button:hover{
-    background-color: coral;
+.btn-padding:hover {
+    background-color: aqua;
     border-color: white;
-}
+}     
 
-button.margin-button{
+
+
+
+.margin-button{
 margin: 25px;
 }
 
-button.margin-div {
+.margin-div {
     border: 1px black solid;
     display: inline-block;
 }
+
+.btn-margin-padding:active {
+    color: red;
+}                    
+
+
+
 main {
     background-color:lightpink;
 }
@@ -67,7 +80,11 @@ aside {
     width: 33%;        
 }
                 
-        
+.elf-div-border {
+    display: inline-block;
+    border: black 1px solid;
+}
+                
 
 nav {        
     background-color: aliceblue;
