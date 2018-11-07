@@ -1,32 +1,74 @@
-function simplefunction() {
+window.onload = () => {
 
-    console.log("functions should consist of statements designed to perform a single task.")
-    
+    const functionCalls = document.getElementById('function-calls');
+    const calluserinput = document.getElementById('call-user-input');
+
+    functionCalls.onclick = () => {
+        simplefunction();
+        functionParameters("Many functions return values.");
+        functionreturn();
+        const returnvalue = functionreturn();
+        console.log(returnvalue);
     }
 
-function functionParameters(vaule) {
+    calluserinput.onclick = () => {
+        const userInputParagraph = document.getElementById('show-user-input');
+        const userInput = document.getElementById('user-input');
+        userInputParagraph.textContent = userInput.value;
+    }
 
-    console.log(vaule)
 }
 
-function add (a, b) {
+function simplefunction() {
 
-    console.log(a + b);
+    const displaytext = "functions should consist of statements designed to perform a single task."
+    const simpleFunction = document.getElementById('simple-function');
+    console.log(displaytext)
+    simpleFunction.textContent = displaytext;
+
 }
 
+function functionParameters(value) {
 
-function adder() {
-    
-    console.log(2 + 3);
+    const functionParameters = document.getElementById("function-parameters");
+    console.log(value);
+    functionParameters.textContent = value;
+
 }
 
 function functionreturn() {
-
-    console.log("Many functions return values.");
+    return "Many functions return values.";
 }
 
-simplefunction();
-functionParameters("Many functions take parameters.");
-add(2,3);
-adder();
-functionreturn();
+
+
+
+
+
+
+// function functionreturn() {
+//  console.log("Many functions return values.");
+// }
+
+
+// simplefunction();
+// functionParameters("Many functions take parameters.");
+
+
+
+
+
+
+//add(2, 3);
+//adder();
+// functionreturn();
+
+//*function add(a, b) {
+
+//    console.log(a + b);
+//}
+
+//function adder() {
+
+  //  console.log(2 + 3);
+//}
