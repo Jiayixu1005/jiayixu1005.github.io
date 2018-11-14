@@ -14,6 +14,7 @@ window.onload = () => {
         feetToInchesDisplay.textContent = feetToInches(feetToInchesInput.value);
     };
 
+
     milesToFeetAction.onclick = () => {
         const milesToFeetInput = document.getElementById('miles-to-feet-input');
         const milesToFeetDisplay = document.getElementById('miles-to-feet-display');
