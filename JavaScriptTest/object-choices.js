@@ -1,4 +1,12 @@
 function loader() {
+
+    const objectLiteralButton = document.getElementById('simple-object-action')
+    const functionButton = document.getElementById('function-object-action')
+    const customClassButton = document.getElementsById('custom-class-action')
+
+
+
+
     const getNamesButton = document.getElementById('getNames');
     const FunctionButton = document.getElementById('getFunctionObject');
 
@@ -52,8 +60,6 @@ myObject.getFullName = function() {
     return this.firstName + ' ' + this.middleName + ' ' + this.lastName;
 
 }
-
-
 
 console.log(myObject.firstName);
 console.log(myObject['firstName']);
