@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radio-Choices</title>
+    <script src="radio-choices.js"></script>
+    <link rel="stylesheet" href="elf-button.css">
+</head>
+<header>
+    <h1>Radio-Choices</h1>
+    <p><i>by Jiayi Xu</i></p>
+</header>
+
+<body>
+    <main>
+        <section>
+            <fieldset>
+                <legend>The User Selection</legend>
+                <p><b>User choice</b>: <span id="user-choice">Unknown</span></p>
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>Our Form</legend>
+                <!-- OUR FORM GOES HERE -->
+                <form id="sort-type" action="goThere">
+                    <input type="radio" id="rank" name="sorter" value="Rank" checked>
+                    <label for="rank">Rank</label>
+
+                    <input type="radio" id="language" name="sorter" value="Language">
+                    <label for="language">Language</label>
+
+                    <input type="radio" id="status" name="sorter" value="Status">
+                    <label for="status">Status</label>
+
+                    <input type="radio" id="category" name="sorter" value="Category">
+                    <label for="category">Category</label>
+
+                    <input type="radio" id="downloads" name="sorter" value="Downloads">
+                    <label for="downloads">Downloads</label>
+
+                    <div>
+                        <input class="btn-padding" type="submit" value="Submit">
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+
+        <P>&copy; Jiayi Xu</P>
+        <ul>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+    </footer>
+</body>
+
+</html>

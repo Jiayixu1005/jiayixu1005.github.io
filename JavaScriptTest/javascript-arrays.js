@@ -2,9 +2,24 @@ window.onload = () => {
     const arrays = {
         numbers: [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5],
         languageNames: ['JavaScript', 'HTML', 'CSS', 'Java', 'C#', 'Python', 'C/C++'],
-        languagePopularity: ['JavaScript rank: 1', 'HTML rank: 2', 'CSS rank: 3'],
+        languagePopularity: [
+            {
+                language: 'JavaScript',
+                rank: 2
+        },
+        {
+            language: 'HTML',
+            rank: 1
+    },
+    {
+        language: 'CSS',
+        rank: 3
+}
+    ],
 
-    }
+    };
+
+    let compareTool = compareLanguage;
 
     const numbersAction = document.getElementById('numbers-action');
     const languageNamesAction = document.getElementById('tech-language-names-action');
@@ -21,7 +36,7 @@ window.onload = () => {
 
     languageNamesAction.onclick = () => {
         const languageNamesDisplay = document.getElementById('tech-language-names-display');
-        for (let languageNames of arrays.languageNames) {
+        for (let languageNames of arrays.languageNames.sort()) {
             const li = document.createElement("li");
             li.appendChild(document.createTextNode(languageNames));
             languageNamesDisplay.appendChild(li);
