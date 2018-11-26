@@ -4,7 +4,17 @@ function loader() {
     const functionButton = document.getElementById('function-object-action')
     const customClassButton = document.getElementsById('custom-class-action')
 
+    objectLiteralButton.onclick = function() {
 
+    }
+
+    functionButton.onclick = function() {
+
+    }
+
+    customClassButton.onclick = function() {
+
+    }
 
 
     const getNamesButton = document.getElementById('getNames');
@@ -29,6 +39,7 @@ function loader() {
 }
 window.onload = loader;
 
+/* Object Literal*/
 
 const myObject = {
     firstName:'Jiayi',
@@ -36,8 +47,14 @@ const myObject = {
     getName: function() {
         return this.firstName + ' ' + this.lastName;
     }
+}
 
-};
+    myObject.middleName = 'None';
+    myObject.getFullName = function() {
+    return this.firstName + ' ' + this.middleName + ' ' + this.lastName;
+}
+
+/* Function Object*/
 
 function FunctionObject () {
     const firstName = 'Jiayi';
@@ -55,11 +72,8 @@ function FunctionObject () {
 }
 
 
-myObject.middleName = 'None';
-myObject.getFullName = function() {
-    return this.firstName + ' ' + this.middleName + ' ' + this.lastName;
 
-}
+
 
 console.log(myObject.firstName);
 console.log(myObject['firstName']);
