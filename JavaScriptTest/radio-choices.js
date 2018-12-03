@@ -12,5 +12,28 @@ window.onload = () => {
             setColor("greenBackground");
             showChoice(value);
         }
+        if (value.toLowerCase() === 'yellow') {
+            setColor("redBackground");
+            showChoice(value);
+        } else {
+            setColor("yellowBackground");
+            showChoice(value);
+        }
+        if (value.toLowerCase() === 'purple') {
+            setColor("purpleBackground");
+            showChoice(value);
+        }
+
+    });
+
+    let currentClass = null;
+
+    const setColor = (className) => {
+        console.log("SET CLASS TO", className);
+        var element = document.getElementById("form-section");
+        if (currentClass) {
+            element.classList.remove(currentClass);
+        }
+        currentClass = className;
+        element.classList.add(className);
     }
-}
