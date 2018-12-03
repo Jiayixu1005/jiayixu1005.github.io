@@ -11,6 +11,27 @@ header {
     text-align: center;
 }
 
+.blueBackground {
+    background-color: aqua;
+}
+
+.greenBackground {
+    background-color: green;
+}    
+
+.redBackground {
+    background-color: red;
+}
+
+.yellowBackground {
+    background-color: yellow;
+}  
+
+.purpleBackground {
+    background-color: purple;
+}  
+
+
 main {
     background-color:lightpink;
 }
