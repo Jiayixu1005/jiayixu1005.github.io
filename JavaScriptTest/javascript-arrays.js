@@ -6,20 +6,19 @@ window.onload = () => {
             {
                 language: 'JavaScript',
                 rank: 2
-        },
-        {
-            language: 'HTML',
-            rank: 1
-    },
-    {
-        language: 'CSS',
-        rank: 3
-}
-    ],
+            },
+            {
+                language: 'HTML',
+                rank: 1
+            },
+            {
+                language: 'CSS',
+                rank: 3
+            }
+        ]
 
     };
 
-    let compareTool = compareLanguage;
 
     const numbersAction = document.getElementById('numbers-action');
     const languageNamesAction = document.getElementById('tech-language-names-action');
@@ -27,11 +26,17 @@ window.onload = () => {
 
     numbersAction.onclick = () => {
         const numbersDisplay = document.getElementById('numbers-display');
-        for (let number of arrays.numbers) {
-            const li = document.createElement("li");
-            li.appendChild(document.createTextNode(number));
-            numbersDisplay.appendChild(li);
+        const showNumbers = () => {
+            for (let number of arrays.numbers) {
+                const li = document.createElement("li");
+                li.appendChild(document.createTextNode(number));
+                numbersDisplay.appendChild(li);
+            }
         }
+        showNumbers();
+        arrays.numbers.sort((a, b) => a - b);
+        showNumbers();
+
     };
 
     languageNamesAction.onclick = () => {
@@ -44,14 +49,32 @@ window.onload = () => {
     };
 
     techLanguagePopularityAction.onclick = () => {
-        const languagePopularityDisplay = document.getElementById('tech-language-popularity-display');
-        for (let languagePopularity of arrays.languagePopularity) {
+        const techLanguagePopularityDisplay = document.getElementById('tech-language-popularity-display');
+
+        arrays.languagePopularity.sort(compareRank);
+
+        techLanguagePopularityDisplay.innerHTML = '';
+
+        for (let language of arrays.languagePopularity) {
             const li = document.createElement("li");
-            li.appendChild(document.createTextNode(languagePopularity));
-            languagePopularityDisplay.appendChild(li);
+            li.appendChild(document.createTextNode(language.language + ' rank: ' + language.rank));
+            techLanguagePopularityDisplay.appendChild(li);
         }
     };
 };
 
+function compareRank(a, b) {
+    // Use toUpperCase() to ignore character casing
+    const rankA = a.rank;
+    const rankB = b.rank;
+
+    let comparison = 0;
+    if (rankA > rankB) {
+        comparison = 1;
+    } else if (rankA < rankB) {
+        comparison = -1;
+    }
+    return comparison;
+}
 
 

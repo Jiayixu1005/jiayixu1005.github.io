@@ -1,5 +1,5 @@
 header {
-    background-color: steelblue;
+    background-color: crimson;
     text-align: center;
 
 }
@@ -45,7 +45,7 @@ nav li {
 }
 
 main {
-background-color: crimson;
+background-color: rgb(33, 103, 207);
 text-align: center;
 }
 
@@ -53,6 +53,10 @@ figure.left {
     float: center;
 }
 
+aside {
+    text-align: center;
+    color: darkblue;
+}
 
 footer {
     background-color: steelblue;

@@ -37,3 +37,4 @@ window.onload = () => {
         currentClass = className;
         element.classList.add(className);
     }
+}

@@ -30,11 +30,12 @@ window.onload = () => {
     };
 
     areaOfTriangleAction.onclick = () => {
-        const areaOfTriangleInput = document.getElementById('area-of-triangle-input-height');
-        const areaOfTriangleInput = document.getElementById('area-of-triangle-input-base');
+        const areaOfTriangleInput1 = document.getElementById('area-of-triangle-input-height');
+        const areaOfTriangleInput2 = document.getElementById('area-of-triangle-input-base');
         const areaOfTriangleDisplay = document.getElementById('area-of-triangle-display');
 
-        areaOfTriangleDisplay.textContent = areaOfTriangle(areaOfTriangleInput.value);
+        areaOfTriangleDisplay.textContent = areaOfTriangle(areaOfTriangleInput1.value);
+        areaOfTriangleDisplay.textContent = areaOfTriangle(areaOfTriangleInput2.value);
     };
 
 

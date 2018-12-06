@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Theme</title>
-    <link rel="stylesheet" href="themestyles.css">
+    <!--<link rel="stylesheet" href="themestyles.css">-->
+    <link href="./theme_basic.css" rel="alternate stylesheet" type="text/css" id="basic">
+    <link href="./theme_styles.css" rel="stylesheet" type="text/css" id="default">
+    <script src="../ListButton/lib/css-swap.js"></script>
+
+    <link rel="shortcut icon" type="Image/png" href="./favicon.png"/>
+
 </head>
 
 <body>
@@ -13,42 +20,49 @@
         <h1>Captain America</h1>
         <p class="byline">by Jiayi Xu</p>
     </header>
-   
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="../theme/origin of Captain America/origin.html">Origin of Captain America</a></li>
-        <li><a href="../theme/legal Status/status.html">Legal Status</a></li>
-        <li><a href="../theme/fictional character biography/biography.html">Fictional Character Biography</a></li>
-        <li><a href="../theme/publication history/history.html">Publication History</a></li>
-        <li><a href="../theme/ability of Captain America/ability.html">Ability of Captain America</a></li>
-    </ul>
-</nav>
 
-<main>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="../theme/origin_of_Captain_America/origin.html">Origin of Captain America</a></li>
+            <li><a href="../theme/legal_Status/status.html">Legal Status</a></li>
+            <li><a href="../theme/fictional_character_biography/biography.html">Fictional Character Biography</a></li>
+            <li><a href="../theme/publication_history/history.html">Publication History</a></li>
+            <li><a href="../theme/ability_of_Captain_America/ability.html">Ability of Captain America</a></li>
+        </ul>
+    </nav>
 
-<section>
-    <h1>The Evolution of Captain America's Suit in Comics</h1>
-    <figure>
-        <img src="../images/evolution-of-Captian-america.jpg" alt="Evolution-of-Captian-America-Comics" width="1024" height="700">
-    </figure>
-    <h2>The Evolution of Captain America's Suit in MUC</h2>
-    <figure>
-        <img src="../images/evolution of cap's suit in muc.jpg" alt="Evolution-of-Captian-America-MUC" width="1024" height="600">
-    </figure>
-</section>
-</main>
+    <main>
 
-<footer>
-    
-    <P>&copy; Jiayi Xu</P>
-    <ul>
-        <li><a href="about.html">About</a></li>
-    </ul>
+        <section>
+            <h1>The Evolution of Captain America's Suit in Comics</h1>
+            <figure>
+                <img src="../images/evolution-of-Captian-america.jpg" alt="Evolution-of-Captian-America-Comics" width="628"
+                    height="662">
+            </figure>
+            <h2>The Evolution of Captain America's Suit in MUC</h2>
+            <figure>
+                <img src="../images/evolution of cap's suit in muc.jpg" alt="Evolution-of-Captian-America-MUC" width="628"
+                    height="662">
+            </figure>
 
-</footer>
+            <button id='appearanceAction' type="button">Change Appearance</button>
+
+
+        </section>
+    </main>
+
+    <footer>
+
+        <P>&copy; Jiayi Xu</P>
+        <ul>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+    </footer>
 
 
 </body>
+
 </html>

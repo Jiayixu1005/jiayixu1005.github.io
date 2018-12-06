@@ -1,0 +1,64 @@
+header {
+    background-color: steelblue;
+    text-align: center;
+
+}
+
+header p {
+    font-weight: bold;
+    color: blue;
+    text-emphasis-color: white;
+}
+
+p.byline {
+    font-style: italic;
+    font-size: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subpage-header{
+    text-align: left;
+}
+
+.subpage-text{
+    text-align: left;
+}
+
+nav {        
+    background-color: aliceblue;
+    border: 1px green solid;
+    padding: 8px;
+    margin: -1px 0px 0px 0px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav li {
+    display: inline;
+    padding: 8px;    
+}
+
+main {
+background-color: crimson;
+text-align: center;
+}
+
+figure.left {
+    float: center;
+}
+
+aside {
+    text-align: center;
+    color: darkblue;
+}
+
+footer {
+    background-color: steelblue;
+    text-align: center;
+}
